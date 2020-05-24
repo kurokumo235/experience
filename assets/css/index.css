@@ -1,0 +1,190 @@
+header{
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	color: white;
+}
+body{
+	font-family: "微軟正黑體";
+	background-color: #FFE8E8;
+}
+.center{
+    text-align: center;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-top: 12%;
+    margin-bottom: 8%;
+}
+p.title{
+	font-size: 20px;
+	letter-spacing:2px;
+}
+p.kotoba{
+	font-size: 24px;
+	letter-spacing:2px;
+	text-shadow:20px 6px 5px gray;
+}
+img.icon{
+	width: 50px;
+	margin:0px 5px 20px 5px;
+}
+td.fb{
+	display: none;
+	line-height: 50px;
+}
+td.icon:hover + td.fb{
+	display: block;
+}
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 13px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+div.title{
+    color: #FF5F5F;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+ul{
+	width: 100%;
+}
+li{
+	list-style: none;
+	color: #595959;
+	font-size: 16px;
+	margin: 30px 50px 0 0;
+	position: relative;
+}
+li::before,li::after{
+	content: "";
+	display: block;
+	height: 16px;
+	width: 100%;
+	background: #F8F6F7;
+	position: absolute;
+	bottom: -15px;
+	border-radius: 12px;
+}
+li::after{
+	background-image: linear-gradient(45deg,#FF9696,#FF5959)
+}
+
+li::after{
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+.padding{
+	padding-bottom: 5%;
+}
+.c::after{
+	animation-name: c;
+}
+.java::after{
+	animation-name: java;
+}
+.python::after{
+	animation-name: python;
+}
+.html::after{
+	animation-name: html;
+}
+.sql::after{
+	animation-name: sql;
+}
+@keyframes c{
+	from {width: 0;}
+	to{width: 70%;}
+}
+@keyframes java{
+	from {width: 0;}
+	to{width: 80%;}
+}
+@keyframes python{
+	from {width: 0;}
+	to{width: 85%;}
+}
+@keyframes html{
+	from {width: 0;}
+	to{width: 65%;}
+}
+@keyframes sql{
+	from {width: 0;}
+	to{width: 70%;}
+}
+img.home{
+	width: 100%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+p.home{
+	margin-left: 5%;
+	font-weight: bold;
+	font-size: 18px;
+	color: #F59F00;
+}
+p.intro1{
+	line-height:200%;
+	letter-spacing:2px;
+	margin-left:3%;
+}
+p.intro2{
+	line-height:200%;
+	letter-spacing:2px;
+	margin-left:3%;
+	margin-top:15%;
+}
+p.work{
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+}
+img.work{
+	width:80%;
+	margin-left:10%;
+	margin-bottom:5%;
+}
+footer{
+	text-align: center;
+	background: #595959;
+	color: white;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
