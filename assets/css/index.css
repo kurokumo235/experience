@@ -95,12 +95,12 @@ li{
 li::before,li::after{
 	content: "";
 	display: block;
-	height: 16px;
+	height: 20px;
 	width: 100%;
 	background: #F8F6F7;
 	position: absolute;
-	bottom: -15px;
-	border-radius: 12px;
+	bottom: -20px;
+	border-radius: 4px;
 }
 li::after{
 	background-image: linear-gradient(45deg,#FF9696,#FF5959)
